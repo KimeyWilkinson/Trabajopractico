@@ -1,16 +1,15 @@
 <?php
-
-$M1 = $_GET['M1'];
+$M10 = $_GET['M10'];
+$M5 = $_GET['M5'];
 $M2 = $_GET['M2'];
-$M3 = $_GET['M3'];
-$M4 = $_GET['M4'];
+$M1 = $_GET['M1'];
+$M050 = $_GET['M050'];
+$M025 = $_GET['M025'];
+$M010 = $_GET['M010'];
 
-($N1 = 1);
-($N2 = 0.5);
-($N3 = 0.25);
-($N4 = 0.10);
 
-$SUMA = ($M1*$N1) + ($M2*$N2) + ($M3*$N3) + ($M4*$N4);
+
+$SUMA = ($M10 * 10) + ($M5 * 5) + ($M2 * 2) + ($M1* 1) + ($M050* 0.50) + ($M025* 0.25) + ($M010* 0.10);
 
 ?>
 <!DOCTYPE html>
@@ -24,6 +23,6 @@ $SUMA = ($M1*$N1) + ($M2*$N2) + ($M3*$N3) + ($M4*$N4);
 	<h1>Resultado</h1>
 
 
-	<?php echo "La suma de las monedas da como resultado" $SUMA; ?>
+	<?php echo "La suma de las monedas da como resultado" . $SUMA; ?>
 </body>
 </html>  
